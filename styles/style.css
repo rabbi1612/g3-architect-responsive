@@ -9,6 +9,9 @@
     padding: 20px 25px;
     cursor: pointer;
 }
+.txet-light-gray {
+    color: #727272;
+}
 
 body {
     font-family: 'Work Sans', sans-serif;
@@ -61,40 +64,18 @@ nav li a {
     font-weight: 700;
 }
 
-.banner-description {
-    color: #727272;
-}
+
 .banner img{
     width: 100%;
     margin-top: 20px;
 }
 
-/* responsive media Quary */
-/* Moibile device */
 
-@media screen and (max-width: 576px) {
-    header{
-        padding: 20px;
-    }
-    nav{
-        flex-direction: column;
-    }
-}
-/* tablet or mediam device */
-
-@media screen and (min-width: 576px) and (max-width:960px) {
-    header{
-        padding: 50px;
-    }
-    nav{
-        flex-direction: column;
-    }
-}
 /* main style */
 
 main{
     max-width: 1140px;
-    margin: 0px auto;
+    margin: 70px auto;
 }
 /* teams style */
 
@@ -120,4 +101,42 @@ main{
 .text-feture{
     color: #FF900E;
     font-weight: 700;
+}
+
+
+
+/* responsive media Quary */
+/* Moibile device */
+
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .team-container{
+        flex-direction: column;
+    }
+    .team-container-img{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .teams-contant{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+/* tablet or mediam device */
+
+@media screen and (min-width: 576px) and (max-width:960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .team-container{
+        flex-direction: column;
+    }
 }
